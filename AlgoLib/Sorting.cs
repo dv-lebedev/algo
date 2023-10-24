@@ -8,9 +8,44 @@ namespace AlgoLib
 {
     public static class Sorting
     {
-        public static void Quik(int[] values)
+        /// <summary>
+        /// Quik sort
+        /// </summary>
+        /// <param name="array"></param>
+        /// <param name="leftIndex"></param>
+        /// <param name="rightIndex"></param>
+        /// <returns></returns>
+        public static int[] Quik(int[] array, int leftIndex, int rightIndex)
         {
-            throw new NotImplementedException();
+            var i = leftIndex;
+            var j = rightIndex;
+            var pivot = array[leftIndex];
+            while (i <= j)
+            {
+                while (array[i] < pivot)
+                {
+                    i++;
+                }
+
+                while (array[j] > pivot)
+                {
+                    j--;
+                }
+                if (i <= j)
+                {
+                    int temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                    i++;
+                    j--;
+                }
+            }
+
+            if (leftIndex < j)
+                SortArray(array, leftIndex, j);
+            if (i < rightIndex)
+                SortArray(array, i, rightIndex);
+            return array;
         }
     }
 }
