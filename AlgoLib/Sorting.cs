@@ -8,13 +8,6 @@ namespace AlgoLib
 {
     public static class Sorting
     {
-        /// <summary>
-        /// Quik sort
-        /// </summary>
-        /// <param name="array"></param>
-        /// <param name="leftIndex"></param>
-        /// <param name="rightIndex"></param>
-        /// <returns></returns>
         public static int[] Quik(int[] array, int leftIndex, int rightIndex)
         {
             var i = leftIndex;
