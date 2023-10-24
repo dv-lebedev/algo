@@ -42,9 +42,9 @@ namespace AlgoLib
             }
 
             if (leftIndex < j)
-                SortArray(array, leftIndex, j);
+                Quik(array, leftIndex, j);
             if (i < rightIndex)
-                SortArray(array, i, rightIndex);
+                Quik(array, i, rightIndex);
             return array;
         }
     }
