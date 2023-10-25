@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace AlgoLib
 {
+    public class NameAttribute : Attribute
+    {
+        public string Name { get; set; }
+    }
+
     public class Sorting
     {
+        [Name(Name = "")]
         public string? Version { get; set; }
 
         /// <summary>
