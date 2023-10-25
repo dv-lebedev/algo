@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace AlgoLib
 {
-    public static class Sorting
+    public class Sorting
     {
+        public string? Version { get; set; }
+
         /// <summary>
         /// Quik sort
         /// </summary>
