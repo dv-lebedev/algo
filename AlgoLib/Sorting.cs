@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace AlgoLib
 {
-    public static class Sorting
+    public class NameAttribute : Attribute
     {
+        public string Name { get; set; }
+    }
+
+    public class Sorting
+    {
+        [Name(Name = "")]
+        public string? Version { get; set; }
+
         /// <summary>
         /// Quik sort
         /// </summary>
@@ -42,10 +50,20 @@ namespace AlgoLib
             }
 
             if (leftIndex < j)
-                SortArray(array, leftIndex, j);
+                Quik(array, leftIndex, j);
             if (i < rightIndex)
-                SortArray(array, i, rightIndex);
+                Quik(array, i, rightIndex);
             return array;
+        }
+
+        public static int[] Bubbles(int[] array)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static int[] Shuffle(int[] array)
+        {
+            throw new NotImplementedException();
         }
     }
 }
