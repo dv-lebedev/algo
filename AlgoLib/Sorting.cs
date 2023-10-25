@@ -55,5 +55,12 @@ namespace AlgoLib
                 Quik(array, i, rightIndex);
             return array;
         }
+
+        public static int[] Bubbles(int[] array)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }
