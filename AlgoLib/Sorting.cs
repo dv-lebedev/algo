@@ -8,9 +8,5 @@ namespace AlgoLib
 {
     public static class Sorting
     {
-        public static void Quik(int[] values)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
