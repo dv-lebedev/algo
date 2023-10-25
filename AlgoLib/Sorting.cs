@@ -8,5 +8,9 @@ namespace AlgoLib
 {
     public static class Sorting
     {
+        public static void Sort()
+        {
+
+        }
     }
 }
