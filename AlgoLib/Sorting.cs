@@ -61,6 +61,9 @@ namespace AlgoLib
             throw new NotImplementedException();
         }
 
-
+        public static int[] Shuffle(int[] array)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
