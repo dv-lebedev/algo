@@ -8,6 +8,12 @@ namespace AlgoLib
 {
     public static class Sorting
     {
+        static void foo()
+        {
+
+        }
+
+
         /// <summary>
         /// Quik sort
         /// </summary>
