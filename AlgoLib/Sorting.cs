@@ -10,7 +10,7 @@ namespace AlgoLib
     {
         public static void Quik(int[] values)
         {
-            throw new NotImplementedException();
+
         }
     }
 }
