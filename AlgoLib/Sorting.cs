@@ -10,6 +10,11 @@ namespace AlgoLib
     {
         static void foo()
         {
+            
+        }
+
+        static void Main()
+        {
 
         }
 
